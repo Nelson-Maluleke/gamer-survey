@@ -12,16 +12,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="images/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpg" href="favicon.jpg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body class="w3-khaki">
-<nav class="navbar w3-pink"> 
-  <img class="logo w3-pink" src="images/logo.png" alt= "logo" />
+<nav class="navbar"> 
+  <img class="logo" src="images/logo.png" alt= "logo" />
   <div class="link-container">
-    <a class="w3-pink" href="">Home</a>
-    <a class="w3-pink" href="">About</a>
-    <a class="w3-pink" href="">Contact</a>
+    <a class="" href="">Home</a>
+    <a class="" href="">About</a>
+    <a class="" href="">Contact</a>
   </div>
 </nav>
 
@@ -35,7 +36,7 @@
 <main>
 <form method="post" action="">
   <fieldset class="bio-info">
-    <legend>Personal Information:</legend>
+    <legend>Personal Information</legend>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required/>
 
@@ -43,14 +44,14 @@
     <input type="email" id="email" name="email" required/>
 
     <label for="age">Age:</label>
-    <input type="number" id="age" name="age" required/>
+    <input type="number" min="13" max="120" id="age" name="age" required/>
 
-    <label for="country">Country</label>
+    <label for="country">Country:</label>
     <input type="text" id="country" name="country" required/>
   </fieldset>
 
   <fieldset class="freq">
-    <legend>Gaming Habits:</legend>
+    <legend>Gaming Habits</legend>
     <label>How often do you play games?</label>
     
     <div>
@@ -78,32 +79,32 @@
     <legend>Preferred gaming platform</legend>
 
     <div>
-      <input type="checkbox" name="mobile" id="mobile" checkbox required/>
+      <input type="checkbox" name="mobile" id="mobile" checked/>
       <label for="mobile ">Mobile</label>
     </div>
 
     <div>
-      <input type="checkbox" name="pc" id="pc" checkbox required/>
+      <input type="checkbox" name="pc" id="pc"/>
       <label for="pc">PC</label>
     </div>  
 
     <div>
-      <input type="checkbox" name="ps" id="ps" checkbox required/>
+      <input type="checkbox" name="ps" id="ps"/>
       <label for="ps">PlayStation</label>
     </div>  
 
     <div>
-      <input type="checkbox" name="xbox" id="xbox" checkbox required/>
+      <input type="checkbox" name="xbox" id="xbox"/>
       <label for="xbox">Xbox</label>
     </div>
 
     <div>
-      <input type="checkbox" name="nintendo" id="nintendo" checkbox required/>
+      <input type="checkbox" name="nintendo" id="nintendo"/>
       <label for="nintendo">Nintendo</label>
     </div>
 
     <div>
-      <input type="checkbox" name="other" id="other" checkbox required/>
+      <input type="checkbox" name="other" id="other" />
       <label for="other">Other</label>
     </div>
   </fieldset>
@@ -111,7 +112,7 @@
   <fieldset class="features">
     <legend>Game Features</legend>
     <label for="features">What do you value most in a game?</label>
-    <select id="features" name="features">
+    <select id="features" name="features" required>
       <option value="">(select one)</option>
       <option value="graphics">Graphics</option>
       <option value="storyline">Storyline</option>
@@ -122,7 +123,7 @@
     </select>
 
     <label for="frustrates">What frustrates you most in games?</label>
-    <select id="frustrates" name="frustrates">
+    <select id="frustrates" name="frustrates" required>
       <option value="">(select one)</option>
       <option value="lag">Lag</option>
       <option value="bugs">Bugs</option>
@@ -136,7 +137,7 @@
 
 <fieldset>
   <legend>Additional Feedback</legend>
-  <label for="feedback">What would you like to see in the future?
+  <label for="feedback">What would you like to see in the future? (optional)
     <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Any specific games you would like to see more of?. Suggestions for improving your gaming experience?"></textarea>
   </label>
 </fieldset>
@@ -146,7 +147,7 @@
  <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="">terms and conditions</a>
 </label>
 </div>
-  <button class="w3-blue" type="submit" accesskey="s">Submit</button>
+  <button type="submit" accesskey="s">Submit</button>
 </form>
 </main>
 <script src="script.js" ></script>  
