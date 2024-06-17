@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamer Insights Survey</title>
+<meta name="description" content="Participate in our Game Preferences Survey and share your gaming habits, favorite genres, and feedback. Help us understand your gaming experience better!">
+<meta name="keywords" content="games, gaming survey, gamer feedback, game preferences, gaming habits, game survey form, favorite games, gaming experience">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpg" href="favicon.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="w3-khaki">
+<nav class="navbar w3-pink"> 
+  <img class="logo w3-pink" src="https://www.svgrepo.com/show/456876/game-plan.svg" alt= "logo" />
+  <div class="link-container">
+    <a class="w3-pink" href="">Home</a>
+    <a class="w3-pink" href="">About</a>
+    <a class="w3-pink" href="">Contact</a>
+  </div>
+</nav>
+
+<header class="w3-blue">
+  <div>
+    <h1>Gamer Insights Survey</h1>
+    <p>Please fill out this form with the required information</p>
+  </div>
+</header>
+
+<main>
+<form method="post" action="">
+  <fieldset class="bio-info">
+    <legend>Personal Information:</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required/>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required/>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required/>
+
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country" required/>
+  </fieldset>
+
+  <fieldset class="freq">
+    <legend>Gaming Habits:</legend>
+    <label>How often do you play games?</label>
+    
+    <div>
+      <input type="radio" name="gaming-freq" id="daily" value="daily" checked required/>
+      <label for="daily">Daily</label>
+    </div>
+
+    <div>
+      <input type="radio" name="gaming-freq" id="weekly" value="weekly" required/>
+      <label for="weekly">Weekly</label>
+    </div>
+
+    <div>
+      <input type="radio" name="gaming-freq" id="monthly" value="monthly" required/>
+      <label for="monthly">Monthly</label>
+    </div>
+
+    <div>
+      <input type="radio" name="gaming-freq" id="rarely" value="rarely" required/>
+      <label for="rarely">Rarely</label>
+    </div>
+  </fieldset>
+
+  <fieldset class="platform">
+    <legend>Preferred gaming platform</legend>
+
+    <div>
+      <input type="checkbox" name="mobile" id="mobile" checkbox required/>
+      <label for="mobile ">Mobile</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="pc" id="pc" checkbox required/>
+      <label for="pc">PC</label>
+    </div>  
+
+    <div>
+      <input type="checkbox" name="ps" id="ps" checkbox required/>
+      <label for="ps">PlayStation</label>
+    </div>  
+
+    <div>
+      <input type="checkbox" name="xbox" id="xbox" checkbox required/>
+      <label for="xbox">Xbox</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="nintendo" id="nintendo" checkbox required/>
+      <label for="nintendo">Nintendo</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="other" id="other" checkbox required/>
+      <label for="other">Other</label>
+    </div>
+  </fieldset>
+
+  <fieldset class="features">
+    <legend>Game Features</legend>
+    <label for="features">What do you value most in a game?</label>
+    <select id="features" name="features">
+      <option value="">(select one)</option>
+      <option value="graphics">Graphics</option>
+      <option value="storyline">Storyline</option>
+      <option value="gameplay">Gameplay</option>
+      <option value="multiplayer">Multiplayer features</option>
+      <option value="replayability">Replayability</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="frustrates">What frustrates you most in games?</label>
+    <select id="frustrates" name="frustrates">
+      <option value="">(select one)</option>
+      <option value="lag">Lag</option>
+      <option value="bugs">Bugs</option>
+      <option value="difficulty">Difficulty</option>
+      <option value="content">Lack of content</option>
+      <option value="controls">Poor controls</option>
+      <option value="transactions">Micro-Transactions</option>
+      <option value="other">Other</option>
+    </select>
+  </fieldset>
+
+<fieldset>
+  <legend>Additional Feedback</legend>
+  <label for="feedback">What would you like to see in the future?
+    <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Any specific games you would like to see more of?. Suggestions for improving your gaming experience?"></textarea>
+  </label>
+</fieldset>
+
+<div class="terms">
+<label for="terms-and-conditions">
+ <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="">terms and conditions</a>
+</label>
+</div>
+  <button class="w3-blue" type="submit" accesskey="s">Submit</button>
+</form>
+</main>
+<script src="script.js" ></script>  
+</body>
+</html>

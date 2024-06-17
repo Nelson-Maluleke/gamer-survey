@@ -1,0 +1,155 @@
+body {
+ background-color: #aaa;
+ padding: 0;
+ margin: 0;
+ width: 100vw;
+ /*height: 100vh;*/
+ box-sizing: border-box;
+ font-family: "Josefin Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 20px;
+}
+
+.navbar img {
+ height: auto;
+ width: 60px;
+ background-color: pink;
+ padding: 1em auto;
+}
+
+.link-container {
+ display: flex;
+} 
+
+.link-container a {
+ padding: 15px;
+ text-align: center;
+ text-decoration: none;
+}
+
+header {
+  background-color: #3b3b4f;
+  padding: 10px 20px; 
+  text-align: center; 
+  color: white; 
+}
+
+h1 {
+ font-family: "Honk", sans-serif;
+ font-size: 48px;
+ margin: 0;
+}
+
+p {
+ font-family: "Bungee Spice", sans-serif;
+ font-size: 20px;
+ margin: 0;
+}
+
+main {
+ padding-top: 50px;
+}
+
+form {
+  width: 80%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+legend {
+ font-family: "Bungee Spice", sans-serif;
+ font-size: 24px
+}
+
+.bio-info label {
+ display: inline-block;
+}
+
+.bio-info input {
+ display: block;
+ margin-bottom: 10px;
+ width: 500px;
+}
+
+input {
+ width: 500px;
+}
+
+.freq div,
+.platform div {
+ display: flex;
+ align-items: center;
+ margin-bottom: 5px;
+}
+
+.freq div label,
+.platform div label {
+ margin-left: -220px; 
+ display: inline-block;
+}
+
+.freq div input,
+.platform div input {
+ margin-left: -230px;   
+}
+
+.features select {
+ display: block;
+ margin: 5px 0px 10px 0px;
+}
+
+button {
+ display: block;
+ width: 30%;
+ margin: 1em auto;
+ height: 2em;
+ font-size: 1.1rem;
+ border-color: white;
+ border: none;
+ color: white;
+ min-width: 100px;
+}
+
+.inline{
+ display: inline;
+ width: unset;
+ margin: 0 0.5em 0 0;
+ vertical-align: middle;;
+}
+
+.terms {
+ display: flex;
+ justify-content: center;
+ margin: 0 auto;
+ width: 100%;
+ text-align: center;
+}
+
+.terms > a {
+ color: #1E90FF;
+}
+
+.terms > a:hover {
+ color: #FF69B4;
+ text-decoration: underline;
+ }
+
+.terms > a:visited {
+ color: #9370DB;
+}
+
+.terms > a:active {
+ color: #32CD32; 
+}
