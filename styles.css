@@ -3,7 +3,7 @@ body {
  padding: 0;
  margin: 0;
  width: 100vw;
- height: 100vh;
+ /*height: 100vh;*/
  box-sizing: border-box;
  font-family: "Josefin Sans", sans-serif;
 }
@@ -18,13 +18,18 @@ body {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 10px 20px;
+ /*padding: 10px 20px;*/
+ background-color: deeppink;
+}
+
+fieldset {
+ border: 2px solid dodgerblue
 }
 
 .navbar img {
  height: auto;
  width: 60px;
- background-color: pink;
+ background-color: deeppink;
  padding: 1em auto;
 }
 
@@ -38,11 +43,19 @@ body {
  text-decoration: none;
 }
 
+.link-container a:hover {
+ background-color: hotpink;
+}
+
+.link-container a:active {
+ background-color: hotpink;
+ color: white;
+}
+
 header {
-  background-color: #3b3b4f;
-  padding: 10px 20px; 
-  text-align: center; 
-  color: white; 
+ background-color: #3b3b4f;
+ padding: 10px 20px; 
+ text-align: center; 
 }
 
 h1 {
@@ -62,10 +75,10 @@ main {
 }
 
 form {
-  width: 80%; 
-  max-width: 600px; 
-  margin: 0 auto; 
-  padding: 20px; 
+ width: 80%; 
+ max-width: 600px; 
+ margin: 0 auto; 
+ padding: 20px; 
 }
 
 legend {
@@ -81,10 +94,28 @@ legend {
  display: block;
  margin-bottom: 10px;
  width: 500px;
+ border: none;
+ padding-left: 10px;
+ transition: border-bottom 0.3s ease;
+}
+
+.bio-info input:focus {
+  border-bottom: 3px solid deeppink;  
 }
 
 input {
  width: 500px;
+ outline: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+
+input[type=number] {
+ -moz-appearance: textfield;
 }
 
 .freq div,
@@ -108,18 +139,30 @@ input {
 .features select {
  display: block;
  margin: 5px 0px 10px 0px;
+ padding: 4px 2px;
+ outline: none;
 }
 
 button {
  display: block;
- width: 30%;
+ width: 50%;
+ font-size: 40px;
  margin: 1em auto;
  height: 2em;
- font-size: 1.1rem;
- border-color: white;
+ background-color: deeppink;
  border: none;
- color: white;
  min-width: 100px;
+ font-family: "Nabla", system-ui;
+}
+
+button:hover,
+button:focus {
+ background-color: hotpink;
+}
+
+button:active {
+ background-color: hotpink;
+ color: white;
 }
 
 .inline{
@@ -137,19 +180,19 @@ button {
  text-align: center;
 }
 
-.terms > a {
+.terms a {
  color: #1E90FF;
 }
 
-.terms > a:hover {
+.terms a:hover {
  color: #FF69B4;
  text-decoration: underline;
  }
 
-.terms > a:visited {
+.terms a:visited {
  color: #9370DB;
 }
 
-.terms > a:active {
+.terms a:active {
  color: #32CD32; 
 }
