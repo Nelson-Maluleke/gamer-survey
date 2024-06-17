@@ -1,8 +1,8 @@
 body {
  padding: 0;
  margin: 0;
- width: 100vw;
- /*height: 100vh;*/
+ max-width: 100vw;
+ max-height: 100vh;
  box-sizing: border-box;
  font-family: "Josefin Sans", sans-serif;
 }
@@ -137,7 +137,8 @@ input[type=number] {
 
 .freq div input,
 .platform div input {
- margin-left: -230px;   
+ margin-left: -230px;  
+ cursor: pointer; 
 }
 
 .features select {
@@ -145,12 +146,15 @@ input[type=number] {
  margin: 5px 0px 10px 0px;
  padding: 4px 2px;
  outline: none;
+ cursor: pointer;
 }
 
 textarea {
  resize: none;
  outline: none;
  padding: 5px;
+ width: 100%;
+ overflow-x: hidden;
 }
 
 textarea:focus {
@@ -173,10 +177,11 @@ button {
 button:hover,
 button:focus {
  background-color: hotpink;
+ cursor: pointer;
 }
 
 button:active {
- background-color: hotpink;
+ background-color: deeppink;
  color: white;
 }
 
@@ -300,6 +305,21 @@ button:active {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+ }
 }
 
+footer {
+ height: 60px;
+ width: 100%;
+ background-color: deeppink;
+ text-align: center;
+}
+
+footer .author {
+  display: block;
+ font-family: "Josefin Sans", sans-serif; 
+}
+
+.git {
+ font-size: 28px;
 }
