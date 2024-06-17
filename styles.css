@@ -1,5 +1,4 @@
 body {
- background-color: #aaa;
  padding: 0;
  margin: 0;
  width: 100vw;
@@ -215,4 +214,92 @@ button:active {
 
 .terms a:active {
  color: #32CD32; 
+}
+
+.container {
+ display: none;
+ margin-right: 15px;
+ padding: 0px 10px
+}
+
+.container:hover,
+.container:active {
+ background-color: hotpink;
+}
+
+.link-container a:active {
+ background-color: hotpink;
+ color: white;
+}
+
+.sidenav {
+ display: none;
+}
+
+@media only screen and (max-width: 600px) {
+ .link-container {
+   display: none;
+ }
+
+ .container {
+   display: inline-block;
+   cursor: pointer;
+ }
+
+.bar1, .bar2, .bar3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+ }
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.sidenav {
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 }
